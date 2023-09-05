@@ -1,0 +1,102 @@
+// RockPaperScissors.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+#include <string>
+#include <math.h>
+#include <cstdlib>
+#include <time.h>
+#include <stdio.h>
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int computerChoice;
+	string userAnswer;
+	string computerAnswer;
+	int play;
+
+	play = 1;
+
+	while (  play = 1 ){
+	cout << "Choose rock, paper, or scissors!" << endl;
+	cout << "\n";
+	cin >> userAnswer;
+	cout << "\n";
+
+	/* initialize random seed: */
+	srand (time(NULL));
+
+	computerChoice = rand() % 100;
+
+	if (computerChoice < 34) {
+		computerAnswer = "rock";
+	} else if (computerChoice <= 67) {
+		computerAnswer = "paper";
+	} else {
+		computerAnswer = "scissors";
+	}
+
+	cout << "the computer chose  " << computerAnswer << endl;
+	cout << "\n";
+	
+	int winner (string computerAnswer, string userAnswer);{
+		if (userAnswer == computerAnswer){
+			 cout << "Tie";
+			 cout << "\n";
+			 cout << "\n";
+		}
+		 else if(computerAnswer == "rock") {
+        
+        if(userAnswer == "scissors"){
+            cout << "rock wins";
+			cout << "\n";
+			cout << "\n";
+        }
+        else {
+            cout << "paper wins";
+			cout << "\n";
+			cout << "\n";
+        }
+    }
+    else if(computerAnswer == "paper") {
+        
+        if(userAnswer == "rock") {
+            cout << "paper wins";
+			cout << "\n";
+			cout << "\n";
+        }
+        else {
+            cout << "scissors wins";
+			cout << "\n";
+			cout << "\n";
+        }
+    }
+    else if(computerAnswer == "scissors"){
+        
+        if(userAnswer == "paper") {
+           cout << "scissors wins";
+		   cout << "\n";
+		   cout << "\n";
+        }
+        else {
+            cout << "rock wins";
+			cout << "\n";
+			cout << "\n";
+        }
+    }
+}; 
+	system ("pause");
+	system ("cls");	
+	}
+		return 0;
+}
+
+tring userAnswer);{
+		if (userAnswer == computerAnswer){
+			 cout << "Tie";
+			 cout << "\n";
+			 c

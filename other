@@ -1,0 +1,90 @@
+// other.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+#include <string>
+#include <math.h>
+#include <cstdlib>
+#include <time.h>
+
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int word = 1;
+	while ( word = 1 ){
+	
+	string input;
+	cout << "Enter a word, find the value: " "\n" << endl;
+	getline(cin,input);
+
+	int numOfChars = input.length();
+	int val = 0;
+
+	for (unsigned int i = 0; i < input.length(); i++) {
+		if (input.at(i) == ' ') {
+			numOfChars--;
+		}
+			if (input.at(i) == 'a'){
+				val = val + 1;}
+			if (input.at(i) == 'b'){
+				val = val + 2;}
+			if (input.at(i) == 'c'){
+				val = val + 3;}
+			if (input.at(i) == 'd'){
+				val = val + 4;}
+			if (input.at(i) == 'e'){
+				val = val + 5;}
+			if (input.at(i) == 'f'){
+				val = val + 6;}
+			if (input.at(i) == 'g'){
+				val = val + 7;}
+			if (input.at(i) == 'h'){
+				val = val + 8;}
+			if (input.at(i) == 'i'){
+				val = val + 9;}
+			if (input.at(i) == 'j'){
+				val = val + 10;}
+			if (input.at(i) == 'k'){
+				val = val + 11;}
+			if (input.at(i) == 'l'){
+				val = val + 12;}
+			if (input.at(i) == 'm'){
+				val = val + 13;}
+			if (input.at(i) == 'n'){
+				val = val + 14;}
+			if (input.at(i) == 'o'){
+				val = val + 15;}
+			if (input.at(i) == 'p'){
+				val = val + 16;}
+			if (input.at(i) == 'q'){
+				val = val + 17;}
+			if (input.at(i) == 'r'){
+				val = val + 18;}
+			if (input.at(i) == 's'){
+				val = val + 19;}
+			if (input.at(i) == 't'){
+				val = val + 20;}
+			if (input.at(i) == 'u'){
+				val = val + 21;}
+			if (input.at(i) == 'v'){
+				val = val + 22;}
+			if (input.at(i) == 'w'){
+				val = val + 23;}
+			if (input.at(i) == 'x'){
+				val = val + 24;}
+			if (input.at(i) == 'y'){
+				val = val + 25;}
+			if (input.at(i) == 'z'){
+				val = val + 26;}		
+
+	}
+	cout <<"\n" "\n" "Number of characters: " << input.length() << "\n" "\n Added letters of the word: " << val << "\n" "\n" << endl;
+	system ("pause");
+	system ("CLS");
+	}
+	return 0;
+}

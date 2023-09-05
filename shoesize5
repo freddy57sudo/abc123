@@ -1,0 +1,101 @@
+// shoesizex5.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+#include <string>
+#include <math.h>
+#include <cstdlib>
+#include <time.h>
+#include <stdio.h>
+#include <string>
+#include <string.h>
+
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int shoeSize;
+	int birthyear;
+	int compAnswer;
+	int year2digit;
+	
+
+	cout << "what is your shoe size rounded to the nearest whole number?";
+	cin >> shoeSize;
+	compAnswer = shoeSize * 5 + 50;
+	compAnswer = compAnswer * 20;
+	
+	
+	cout << "what is the last two digits of this year?" ;
+	cin >> year2digit;
+	year2digit = 1000 + year2digit;
+	compAnswer = compAnswer + year2digit;
+
+	cout << "what is your birthyear in four digits?";
+	cin >> birthyear;
+	compAnswer = compAnswer - birthyear;
+	
+	cout << "your shoe size is the first 2 digits and your age is the last 2!";
+	cout << "\n";
+	cout << compAnswer;
+	cout << "\n";
+	
+	
+
+	system ("pause");
+	system ("clr");
+	return 0;
+}
+
+es the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+#include <string>
+#include <math.h>
+#include <cstdlib>
+#include <time.h>
+#include <stdio.h>
+#include <string>
+#include <string.h>
+
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int shoeSize;
+	int birthyear;
+	int compAnswer;
+	int year2digit;
+	
+
+	cout << "what is your shoe size rounded to the nearest whole number?";
+	cin >> shoeSize;
+	compAnswer = shoeSize * 5 + 50;
+	compAnswer = compAnswer * 20;
+	
+	
+	cout << "what is the last two digits of this year?" ;
+	cin >> year2digit;
+	year2digit = 1000 + year2digit;
+	compAnswer = compAnswer + year2digit;
+
+	cout << "what is your birthyear in four digits?";
+	cin >> birthyear;
+	compAnswer = compAnswer - birthyear;
+	
+	cout << "your shoe size is the first 2 digits and your age is the last 2!";
+	cout << "\n";
+	cout << compAnswer;
+	cout << "\n";
+	
+	
+
+	system ("pause");
+	system ("

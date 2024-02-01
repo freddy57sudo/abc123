@@ -1,7 +1,7 @@
 // other.cpp : Defines the entry point for the console application.
 //
-
-#include "stdafx.h"
+//include for vs 2010 express
+//#include "stdafx.h"
 #include <iostream>
 #include <stdlib.h>
 #include <string>
@@ -11,9 +11,10 @@
 
 
 using namespace std;
-
-int _tmain(int argc, _TCHAR* argv[])
+// int _tmain(int argc, _TCHAR* argv[]) "i think might be for android c compiler or vs
+int main(int argc, char* argv[])
 {
+// it keeps the loop and runs until X
 	int word = 1;
 	while ( word = 1 ){
 	
@@ -27,7 +28,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	for (unsigned int i = 0; i < input.length(); i++) {
 		if (input.at(i) == ' ') {
 			numOfChars--;
-		}
+		}	// will lag the shorterway stops at loop uncontinuous
 			if (input.at(i) == 'a'){
 				val = val + 1;}
 			if (input.at(i) == 'b'){
